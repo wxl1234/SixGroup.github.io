@@ -1,0 +1,361 @@
+ *{
+        margin:0;
+        padding:0;
+        text-decoration: none;
+    }
+ [class^=header-],[class*="header-"]{
+	font-family:icomoon;
+	speak:none;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+body{
+	cursor:url(../images/cursor.png),auto;
+}
+::selection{
+	background-color:#FA622E;
+}
+#page{
+	width: 1349px;
+}
+/*导航栏*/
+#top{
+	position: fixed;
+	width: 1349px;
+	z-index: 99;
+}
+#top #text{
+	width:1349px;
+	height:80px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: white;
+}
+
+.banner{
+	height: 5px;
+	background-color: #F46426;
+	opacity: .5;
+	transition: height 0.35s ease-out;
+}
+.banner_strenthen{
+	height: 50px;
+	background-color:white;
+	opacity: .94;
+	transition: height 0.2s ;
+}
+
+.header-logo:before{
+	content:"\e605";
+}
+ .header-logo{
+     font-size: 14px;
+     line-height:14px;
+     margin:18px 0 0 100px;
+     display: inline-block;
+     opacity: 1;
+     z-index: 10;
+ }
+.hamburger-inner{
+	position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 18px;
+	left: 90%;
+}
+.hamburger-inner>div{
+	width: 100%;
+	height: 3px;
+	margin-top: 3px;
+	background-color: white;
+	z-index: 10;
+}
+
+.hamburger-inner:hover div:nth-child(1){
+	transform: translate(0,-3px);
+	transition: all 0.2s linear;
+}
+.hamburger-inner:hover div:nth-child(3){
+	transform: translate(0,3px);
+	transition: all 0.2s linear;
+}
+/*图片文字区*/
+#picture_text{
+	width:1329px;
+	height: 647px;
+	padding-left: 20px;
+	background-image: url(../images/Headers_careers2.jpg);
+	background-size: 100%;
+}
+#circle{
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 90%;
+	cursor: pointer;
+	overflow: hidden;
+}
+#circle span{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	display: inline-block;	
+	transition:height 0.35s;
+}
+#circle:hover span{
+	transform: translateY(25px);
+}
+/*信息区*/
+#info{
+	position: relative;
+	width: 1349px;
+	height: 1650px;	
+}
+/*文本信息区*/
+#content_intro{
+	position: absolute;
+	width: 1146px;
+	height: 794px;
+	margin: 101px 50% 200px 102px;
+	padding-top:20px ;
+	font-family: omnes-pro,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0,0,0,.7);
+	background-color: white;
+}
+#left{
+	width: 378px;
+	height:470px;
+	/*background-color: lightgreen;*/
+	box-shadow: 60px 60px 47px -17px rgba(0,0,0,.2);
+	float: left;
+}
+#right{
+	width: 746px;
+	height: 697px;
+	/*background-color: coral;*/
+	float: right;
+	margin-left: 20px;
+}
+#right li{
+	list-style: none;
+	cursor: pointer;
+	width: 100%;
+
+	line-height: 50px;
+
+}
+.careers_listing{
+	width: 100%;
+	height: 885px;
+}
+
+.front{
+	width: 100%;
+	height: 50px;
+}
+.bg_color_anmaition{
+	transition: width .5s linear;
+	width: 0;
+	height: 50px;
+	background-color: #FF7433;
+
+}
+.copy_container{
+	width: 100%;
+	height: 50px;
+	margin-top:-50px ;
+
+}
+.description{
+	background-color: rgba(0,0,0,.1);
+	display: none;
+}
+.interaction{
+	width: 100%;
+	 height: 100px;
+	 padding: 20; 
+	 background-color: #000; 
+	 line-height: 100px;
+}
+.a_border{
+	padding: 20px;
+	border: 2px solid white;
+	margin-left: 20px;
+	margin-right: 350px;
+}
+.a_border:hover{
+	cursor: pointer;
+	border-color: #F46426;
+	color: #F46426;
+}
+.interaction a{
+	color:white;
+	margin-left: 20px;
+}
+a:hover span{
+	color: #F46426;
+}
+li:hover .bg_color_anmaition{width: 100%;}
+/*人物信息区*/
+#person_intro{
+	position: absolute;
+	width: 1349px;
+	height: 606px;
+	top:1044px;
+	text-align: left;
+	background-color: lightgray;
+}
+.column{
+	width:369.5px;
+	height: 606px;
+	float: left;
+	padding-left: 80px;
+	font-style: italic;
+	font-size: 15px;
+	color: rgba(0,0,0,.7);
+}
+
+#colum1{background-color:#E9E9E9;}
+#colum2{background-color:#F4F4F4;}
+#colum3{background-color:#E9E9E9;}
+/*页脚*/
+#footer{
+      color:#fff; 
+      width: 1008px;
+      height: 250px;
+      background-color: #181705;
+      overflow: hidden;
+    }
+     #footer>.columnone{
+    
+      width: 250px;
+      height: 250px;
+      margin-left:100px;
+      position:relative;
+      color: #fff;
+      float: left;
+     }
+@font-face{
+  font-family:icomoon;
+  src:url(../fonts/icomoon.eot?-q09vmz);
+  src:url(../fonts/icomoon.eot?#iefix-q09vmz) format('embedded-opentype'),
+  url(../fonts/icomoon.woff?-q09vmz) format('woff'),
+  url(../fonts/icomoon.ttf?-q09vmz) format('truetype'),
+  url(../fonts/icomoon.svg?-q09vmz#icomoon) format('svg');
+  font-weight:400;
+  font-style:normal;
+}
+[class^=icon-],[class*=" icon-"]{
+  font-family:icomoon;
+  speak:none;
+  font-style:normal;
+  font-weight:400;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.icon-logo:before{content:"\e605"}
+
+#footer>.columnone>.icon-logo{
+      color: #fff;
+      position: absolute;
+      font-size: 14px;
+      top:70px;
+      
+  font-style: normal;
+  font-weight: 400;
+  vertical-align: baseline;
+    }
+#footer>.columnone>.icon-logo:hover{
+    color: #55f7d7;
+}
+#footer>.columnone>ul{
+	position:absolute;
+	top:105px;
+	
+}
+#footer>.columnone>ul>a>.fa{
+	color: #fff;
+	font-size: 19px;
+	margin-right:10px;
+}
+#footer>.columnone>ul>a>li:hover{
+	 color: #55f7d7;
+}
+
+#footer>.columnone>p{
+	position: absolute;
+	bottom: 55px;
+	font-size:12px;
+}
+#footer>.columntwo{
+	width: 200px;
+	height:250px;
+    float: left;  
+}
+#footer>.columntwo>h4{
+	margin-top:68px;
+}
+#footer>.columntwo>.content:hover>.small>a,#footer>.columntwo>.content:hover>.map>a{
+	color:#55f7d7;
+}
+.small{
+	margin-top: 15px;
+}
+.small a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+}
+.map{
+	margin-top: 8px;
+}
+.map a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration:underline;
+}
+.columnthree{
+	width: 370px;
+	height:250px;
+  	float: left;
+}
+.columnthree h4{
+	margin-bottom: 15px;
+	margin-top:68px;
+}
+.columnthree a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	text-decoration: underline;
+}
+.columnthree a:hover{
+	color: #55f7d7;
+}
+
+#backTop{
+	width: 20px;
+	height: 20px;
+	margin-left:965px;
+	margin-top:100px;
+	cursor: pointer;
+}
+
+#backTop:hover i{
+	color: #55f7d7;
+}

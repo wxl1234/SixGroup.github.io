@@ -1,0 +1,227 @@
+ *{
+        margin:0;
+        padding:0;
+        text-decoration: none;
+    }
+ [class^=header-],[class*="header-"]{
+	font-family:icomoon;
+	speak:none;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+body{
+	cursor:url(../img/cursor.png),auto;
+}
+
+/*导航栏*/
+#top{
+	position: fixed;
+	width: 1349px;
+	z-index: 99;
+}
+#top #text{
+	width:1349px;
+	height:80px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #FFFFFF;
+}
+
+.banner{
+	height: 5px;
+	background-color: #F46426;
+	opacity: .5;
+	transition: height 0.35s ease-out;
+}
+.banner_strenthen{
+	height: 50px;
+	background-color:white;
+	opacity: .94;
+	transition: height 0.2s ;
+}
+
+.header-logo:before{
+	content:"\e605";
+}
+ .header-logo{
+     font-size: 14px;
+     line-height:14px;
+     margin:18px 0 0 100px;
+     display: inline-block;
+     z-index: 10;
+ }
+.hamburger-inner{
+	position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 18px;
+	left: 90%;
+}
+.hamburger-inner>div{
+	width: 100%;
+	height: 3px;
+	margin-top: 3px;
+	z-index: 10;
+	background-color: white;
+}
+
+.hamburger-inner:hover div:nth-child(1){
+	transform: translate(0,-3px);
+	transition: all 0.2s linear;
+}
+.hamburger-inner:hover div:nth-child(3){
+	transform: translate(0,3px);
+	transition: all 0.2s linear;
+}
+.ss-left{
+	width: 20px;
+	height: 20px;
+	display: inline-block;	
+	transition: width 0.35s ease;	
+	
+}
+.ss-left:hover p{
+
+	transform: translateX(-20px);
+}
+/*导航栏结束*/
+/*正文部分*/
+
+
+/*页脚*/
+#footer{
+      color:#fff; 
+      width: 1008px;
+      height: 250px;
+      background-color: #181705;
+      overflow: hidden;
+    }
+     #footer>.columnone{
+    
+      width: 250px;
+      height: 250px;
+      margin-left:100px;
+      position:relative;
+      color: #fff;
+      float: left;
+     }
+@font-face{
+  font-family:icomoon;
+  src:url(../fonts/icomoon.eot?-q09vmz);
+  src:url(../fonts/icomoon.eot?#iefix-q09vmz) format('embedded-opentype'),
+  url(../fonts/icomoon.woff?-q09vmz) format('woff'),
+  url(../fonts/icomoon.ttf?-q09vmz) format('truetype'),
+  url(../fonts/icomoon.svg?-q09vmz#icomoon) format('svg');
+  font-weight:400;
+  font-style:normal;
+}
+[class^=icon-],[class*=" icon-"]{
+  font-family:icomoon;
+  speak:none;
+  font-style:normal;
+  font-weight:400;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.icon-logo:before{content:"\e605"}
+
+#footer>.columnone>.icon-logo{
+      color: #fff;
+      position: absolute;
+      font-size: 14px;
+      top:70px;
+      
+  font-style: normal;
+  font-weight: 400;
+  vertical-align: baseline;
+    }
+#footer>.columnone>.icon-logo:hover{
+    color: #55f7d7;
+}
+#footer>.columnone>ul{
+	position:absolute;
+	top:105px;
+	
+}
+#footer>.columnone>ul>a>.fa{
+	color: #fff;
+	font-size: 19px;
+	margin-right:10px;
+}
+#footer>.columnone>ul>a>li:hover{
+	 color: #55f7d7;
+}
+
+#footer>.columnone>p{
+	position: absolute;
+	bottom: 55px;
+	font-size:12px;
+}
+#footer>.columntwo{
+	width: 200px;
+	height:250px;
+    float: left;  
+}
+#footer>.columntwo>h4{
+	margin-top:68px;
+}
+#footer>.columntwo>.content:hover>.small>a,#footer>.columntwo>.content:hover>.map>a{
+	color:#55f7d7;
+}
+.small{
+	margin-top: 15px;
+}
+.small a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+}
+.map{
+	margin-top: 8px;
+}
+.map a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration:underline;
+}
+.columnthree{
+	width: 370px;
+	height:250px;
+  	float: left;
+}
+.columnthree h4{
+	margin-bottom: 15px;
+	margin-top:68px;
+}
+.columnthree a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	text-decoration: underline;
+}
+.columnthree a:hover{
+	color: #55f7d7;
+}
+
+#backTop{
+	width: 20px;
+	height: 20px;
+	margin-left:965px;
+	margin-top:100px;
+	cursor: pointer;
+}
+
+#backTop:hover i{
+	color: #55f7d7;
+}
+/*页脚结束*/
